@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Merriweather+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #EEEEEE;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px;
+}
+
+.cabecalho-imagem {
+    height: 150px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+nav > a:hover {
+    background-color: #CEE6C8;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 24px;
+    border-top: 0.4px solid black;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-lema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-lema-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-lema-texto {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 24px;
+    padding-bottom: 78px;
+}
+
+.conteudo-culturas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-culturas-titulo {
+    margin-bottom: 24px;
+    border-top: 0.4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    padding-top: 48px;
+}
+
+.conteudo-titulo-culturas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 12px;
+}
+
+.conteudo-culturas-feijao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.conteudo-culturas-feijao-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-culturas-feijao-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.conteudo-culturas-feijao-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 400px;
+}
+
+.conteudo-culturas-milho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-culturas-milho-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-culturas-milho-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.conteudo-culturas-milho-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 400px;
+}
+
+.conteudo-culturas-soja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-culturas-soja-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-culturas-soja-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.conteudo-culturas-soja-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 400px;
+}
+
+.conteudo-culturas-algodao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-culturas-algodao-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-culturas-algodao-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.conteudo-culturas-algodao-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 400px;
+}
+
+.conteudo-galeria-instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 48px;
+}
+
+.conteudo-galeria-instagram-titulo {
+    margin-bottom: 24px;
+    border-top: 0.4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    padding: 48px;
+}
+
+.conteudo-candidato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.conteudo-candidato-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-candidato-formulario-titulo {
+    margin-bottom: 24px;
+    border-top: 0.4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+.conteudo-candidato-formulario-botao {
+    background: #CEE6C8;
+    width: 160px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+}
+
+.conteudo-candidato-formulario-botao:hover {
+    background: rgba(184, 229, 173, 1);
+}
+
+.rodape {
+    margin-bottom: 24px;
+    border-top: 0.4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 48px;
+}
+
+.rodape-titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #cb2027;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 60px;
+    text-decoration: none;
+    margin: 5px 80px;
+}
+
+.rodape-texto {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 12px;
+    padding-top: 24px;
+}
