@@ -17,7 +17,17 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 6px;
+    padding: 52px;
+    background: #265629;
+}
+
+.cabecalho-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 52px;
+    background: #265629;
 }
 
 .cabecalho-imagem {
@@ -36,13 +46,13 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #CEE6C8;
+    background-color: #1f4715;
 }
 
 .cabecalho-menu-item {
     font-family: 'Exo', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 18px;
 }
@@ -71,14 +81,104 @@ nav > a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .conteudo-principal-lema-texto {
     font-family: 'Exo', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 78px;
+}
+
+.conteudo-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-contato-diversos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-contato-diversos-titulo {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 64px;
+    padding-top: 24px;
+    padding-bottom: 112px;
+}
+
+.conteudo-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-about-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-about-principal-titulo {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 64px;
+    padding-top: 24px;
+    padding-bottom: 112px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contato-titulo {
+    margin-bottom: 24px;
+    border-top: 0.4px solid black;
+	font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 78px;
+}
+
+.contato-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 78px;
+}
+
+.contato-infos-item {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+	font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.contato-infos-item > a {
+    color: inherit
 }
 
 .conteudo-culturas {
@@ -86,6 +186,7 @@ nav > a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 112px;
 }
 
 .conteudo-culturas-titulo {
@@ -148,7 +249,7 @@ nav > a:hover {
     text-align: justify;
     color: black;
     font-size: 16px;
-    width: 400px;
+    width: 300px;
 }
 
 .conteudo-culturas-milho {
@@ -188,7 +289,7 @@ nav > a:hover {
     text-align: justify;
     color: black;
     font-size: 16px;
-    width: 400px;
+    width: 300px;
 }
 
 .conteudo-culturas-soja {
@@ -228,7 +329,7 @@ nav > a:hover {
     text-align: justify;
     color: black;
     font-size: 16px;
-    width: 400px;
+    width: 300px;
 }
 
 .conteudo-culturas-algodao {
@@ -268,18 +369,17 @@ nav > a:hover {
     text-align: justify;
     color: black;
     font-size: 16px;
-    width: 400px;
+    width: 300px;
 }
 
-.conteudo-galeria-instagram {
+.conteudo-mvv {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 48px;
 }
 
-.conteudo-galeria-instagram-titulo {
+.conteudo-mvv-titulo {
     margin-bottom: 24px;
     border-top: 0.4px solid black;
     display: flex;
@@ -290,8 +390,201 @@ nav > a:hover {
     font-family: 'Merriweather Sans', sans-serif;
     color: black;
     font-size: 28px;
-    padding: 48px;
+    padding-top: 48px;
 }
+
+.conteudo-mvv-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 12px;
+    padding-bottom: 112px;
+}
+
+.conteudo-mvv-missao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.conteudo-mvv-missao-imagem {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-mvv-missao-imagem-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.conteudo-mvv-missao-imagem-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 300px;
+}
+
+.conteudo-mvv-visao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-mvv-visao-imagem {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-mvv-visao-imagem-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.conteudo-mvv-visao-imagem-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 300px;
+}
+
+.conteudo-mvv-valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-mvv-valores-imagem {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-mvv-missao-valores-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.conteudo-mvv-missao-valores-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    width: 300px;
+}
+
+.conteudo-quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-quem-somos-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 112px;
+}
+
+.conteudo-quem-somos-historia-titulo {
+    margin-bottom: 24px;
+    border-top: 0.4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    padding-top: 48px;
+}
+
+.conteudo-news {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-news-titulo {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 64px;
+    padding-top: 24px;
+    padding-bottom: 112px;
+}
+
+.conteudo-news-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    font-size: 28px;
+    padding-top: 48px;
+    padding-bottom: 112px;
+}
+
 
 .conteudo-candidato {
     display: flex;
@@ -323,7 +616,7 @@ nav > a:hover {
 }
 
 .conteudo-candidato-formulario-botao {
-    background: #CEE6C8;
+    background: #265629;
     width: 160px;
     height: 40px;
     border: none;
@@ -331,11 +624,11 @@ nav > a:hover {
     border-radius: 20px;
     font-family: 'Exo', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .conteudo-candidato-formulario-botao:hover {
-    background: rgba(184, 229, 173, 1);
+    background: #1f4715;
 }
 
 .rodape {
@@ -346,6 +639,7 @@ nav > a:hover {
     align-items: center;
     justify-content: space-around;
     padding: 48px;
+    background: #265629;
 }
 
 .rodape-titulo{
@@ -365,7 +659,7 @@ nav > a:hover {
 }
 
 .fa-instagram {
-    background: #cb2027;
+    background: #bb3236;
     color: white;
 }
 
@@ -380,7 +674,34 @@ nav > a:hover {
 .rodape-texto {
     font-family: 'Exo', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
-    color: black;
-    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
     padding-top: 24px;
+}
+
+@media(max-width: 1400px){
+    .conteudo-mvv-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-titulo-culturas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho-menu {
+        gap: 10px; 
+    }
+
+    .rodape-titulo {
+        flex-direction: column;
+    }
 }
