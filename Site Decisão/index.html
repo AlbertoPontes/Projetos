@@ -31,9 +31,9 @@
         }
 
         .cabecalho-imagem {
-            height: 250px;
-            padding: 20px;
-            border-radius: 45px;
+            height: 15.625rem;
+            padding: 1.25rem;
+            border-radius: 2.8525rem;
         }
 
         nav {
@@ -546,7 +546,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            padding-bottom: 12px;
+            padding-bottom: 0.75rem;
         }
         
         .conteudo-news-titulo {
@@ -554,7 +554,7 @@
             font-family: 'Merriweather Sans', sans-serif;
             color: black;
             font-size: 64px;
-            padding-bottom: 12px;
+            padding-bottom: 0.75rem;
         }
         
         .conteudo-news-itens {
@@ -567,7 +567,7 @@
         .item-a {
             border-radius: 1%;
             box-shadow: 2px 2px 2px 2px gray;
-            padding: 12px;
+            padding: 0.75rem;
         }
         
         .item-b:hover {
@@ -723,46 +723,127 @@
             width: 100%;
         }
 
-        /* Estilo para telas grandes */
-@media (min-width: 768px) {
-    body {
-        font-size: 16px;
-    }
+        @font-face {
+            font-family : "'Abel'";
+            font-style : normal;
+            font-weight : 400;
+            src : local('Abel'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v6/N59kklKPso9WzbZH9jwJSg.ttf) format('truetype');
+        }
+        
+        body {
+            /*background-color:rgb(239, 212, 38);
+            font-family : "'Abel'";*/
+            font-family: 'Exo', sans-serif;
+            font-family: 'Merriweather Sans', sans-serif;
+            color: black;
+        }
+            
+        body::-webkit-scrollbar-track{
+            background-color: #f9f0d3;
+        }
+        
+        body::-webkit-scrollbar{
+            width: 1%;
+        }
+        
+        body::-webkit-scrollbar-thumb{
+            background-color: #f9f0d3; border-left: 2px solid #454545;
+        }
+        
+        ul li {
+            list-style:none;
+        }
+        
+        .linha-do-tempo {
+            position: relative;
+            max-width: 1024px;height: auto;
+            padding: 0px;margin: 0px auto;
+            overflow: hidden;}
+        
+        .marcador {
+            width: 50%;float: left;
+            height: 100%;position: absolute;
+            z-index: -1;border-right: 2px dashed rgb(160, 247, 164);box-sizing: border-box;
+        } 
+        
+        .ano {
+            font-weight: 600;
+            font-size: 25px;
+            letter-spacing: 3px;
+            color: #f0f0f0;
+            background-color: #265629;background-image: -webkit-linear-gradient(140deg,
+            rgba(255, 255, 255, .2) 50%,
+            transparent 50%,
+            transparent);
+            text-align: center;
+            margin-top:  7%;
+            margin: 1% auto;
+            clear: both;
+        }
+        
+        .item {
+              width: 44%;
+              margin: 4% 0.5%;
+              padding: 1%;
+              float: right;
+        }
+        
+        .item:nth-of-type(2n) {
+              float: left; 
+               margin: 4% 0.5%;
+              padding: 1%;
+        }
+        
+        .item p {
+              color:rgb(66, 65, 60);
+              text-align: center;
+        }
+        
+        .item p a {
+              color: #e44b4b;
+              text-align: center;}
+        
+        @media all and (max-width: 650px) {
+            .item {width: 80%;}
+        }
+        
+        @media(max-width: 650px){
+            .conteudo-mvv-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .conteudo-titulo-culturas{
+                flex-direction: column;
+            }
+        
+            .cabecalho-imagem,
+            .SIPATR{
+                width: -webkit-fill-available;
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .container {
-        padding: 3rem;
-    }
-}
+            .cabecalho-menu {
+                gap: 10px; 
+            }
 
-/* Estilo para telas médias */
-@media (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
-
-    .container {
-        padding: 2rem;
-    }
-
-    .map {
-        height: 300px;
-    }
-}
-
-/* Estilo para telas pequenas (dispositivos móveis) */
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    .container {
-        padding: 1.5rem;
-    }
-
-    .map {
-        height: 200px;
-    }
-}
+            .item-a{
+                width: -webkit-fill-available;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .rodape-titulo {
+                flex-direction: column;
+            }
+        
+            .conteudo-titulo-unidades {
+                flex-direction: column;
+            }
+        }
+ 
 
     </style>
 </head>
@@ -777,8 +858,8 @@
         <a href="#mvv">Em que Acreditamos</a>
         <a href="#unidades">Unidades</a>
         <a href="#culturas">Culturas</a>
-        <a href="#noticias">Notícias</a>
-        <a href="#sipatr">SIPATR</a>
+        <!-- <a href="#noticias">Notícias</a> -->
+        <!-- <a href="#sipatr">SIPATR</a> -->
         <a href="#contato">Contato</a>
         <a href="#candidato">Trabalhe Conosco</a>
     </nav>
@@ -891,29 +972,30 @@
                     <p class="conteudo-culturas-algodao-texto">O algodão é um produto de extrema importância socioeconômica para o Brasil. Além de ser a maior fonte de fibras naturais, garante ao País lugar privilegiado no cenário internacional, como um dos cinco maiores produtores mundiais, ao lado de China, Índia, Estados Unidos e Paquistão.</p>
                     </div>
                 </section>
-        </section>
-
-        <section id="noticias" class="conteudo-about-principal-titulo">
-            <h2>Notícias do Agro</h2>
-            <br>
-            <!-- RSS de notícias da fazenda -->
-            <section class="conteudo-news-itens">
-                <div class="item-a" >
-                <!-- Widgets Notícias Agrícolas - www.noticiasagricolas.com.br/widgets -->
-                <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/noticias?subsecao=2,3,6,8,64,80,85,146,4,160,156,40,158,60,13,163,97,14,205,15,155,84,149,26,62,27,92,148,154,32,67,101,102,103,105,107,108,109,147,111,159,114,157,115,116,68,164,117,118,204,120,203,166&largura=700px&altura=300px&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=12pt&cortexto=333333&corlink=006666&qtd=20&output=js"></script>
-                </div>
             </section>
         </section>
+
+        <!-- <section id="noticias" class="conteudo-about-principal-titulo">
+            <h2>Notícias do Agro</h2>
+            <br> -->
+            <!-- RSS de notícias da fazenda -->
+            <!--<section class="conteudo-news-itens">
+                <div class="item-a" > -->
+                <!-- Widgets Notícias Agrícolas - www.noticiasagricolas.com.br/widgets -->
+                <!-- <script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/noticias?subsecao=2,3,6,8,64,80,85,146,4,160,156,40,158,60,13,163,97,14,205,15,155,84,149,26,62,27,92,148,154,32,67,101,102,103,105,107,108,109,147,111,159,114,157,115,116,68,164,117,118,204,120,203,166&largura=700px&altura=300px&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=12pt&cortexto=333333&corlink=006666&qtd=20&output=js"></script>
+                </div>
+            </section>
+        </section> -->
         <br>
-        <section id="sipatr" class="conteudo-about-principal-titulo">
-            <h2>SIPATR</h2>
+        <!-- <section id="sipatr" class="conteudo-about-principal-titulo">
+            <h2>SIPATR</h2> -->
             <!-- Banner e link para o site da SIPATR -->
-            <section class="conteudo-news">
+           <!-- <section class="conteudo-news">
                 <div class="item-a">
                     <h2>Está preparado para embarcar em uma grande aventura?</h2>
                     <br>
                     <br>
-                    <a href="https://decisao.weex.digital/"><img src="./Images/SIPATR_2023.jpg" alt="SIPATR Banner"></a>
+                    <a href="https://decisao.weex.digital/"><img class="SIPATR" src="./Images/SIPATR_2023.jpg" alt="SIPATR Banner"></a>
                     <p></p>
                     <br>
                     <p>A partir do dia 23/10/23, na plataforma da SIPATR, todas as atividades concluídas valem pontos.</p>
@@ -921,7 +1003,7 @@
                 </div>
             </section>
 
-        </section>
+        </section> -->
 
         <section id="contato" class="conteudo-about-principal-titulo">
             <!-- Informações de contato (e-mail, redes sociais) -->
@@ -943,7 +1025,7 @@
             <div class="conteudo-candidato-formulario">
                 <h2>Trabalhe Conosco</h2>
                 <br>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScGZrXn-lglEakMILKjmTMzGMTF-yi9HiOcdvJXmKJ2-1MwpQ/viewform"><button class="conteudo-candidato-formulario-botao">Clique e se cadastre</button></a>
+                <a href="https://forms.office.com/r/090F00bHtS"><button class="conteudo-candidato-formulario-botao">Clique e se cadastre</button></a>
             </div>
         </section>
     </div>
