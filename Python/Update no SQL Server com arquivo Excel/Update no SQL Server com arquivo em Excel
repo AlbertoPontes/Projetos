@@ -20,11 +20,11 @@ df = pd.read_excel(caminho_excel)
 
 # Iterar sobre as linhas da planilha
 for index, row in df.iterrows():
-    sequencial = row['SEQUENCIAL']
-    link = row['LINK']
+    AliasColuna1Excel = row['NOME_COLUNA1_EXCEL']
+    AliasColuna2Excel = row['NOME_COLUNA2_EXCEL']
     
     # Atualizar o banco de dados
-    cursor.execute("UPDATE Anexo SET Caminho = ? WHERE Sequencial = ?", (link, sequencial))
+    cursor.execute("UPDATE tabela SET Coluna2Banco = ? WHERE Coluna1Banco = ?", (AliasColuna2Excel, AliasColuna1Excel))
     conn.commit()
 
 # Fechar conexão com o banco de dados
