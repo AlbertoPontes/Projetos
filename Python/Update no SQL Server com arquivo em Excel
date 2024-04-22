@@ -1,0 +1,33 @@
+import pandas as pd
+import pyodbc
+
+# Configurações de conexão com o banco de dados
+server = 'Endereco_do_Servidor_do_Banco_de_Dados'
+database = 'Nome_do_Banco_de_Dados'
+username = 'Usuario_do_Banco_de_Dados'
+password = 'Senha_do_Usuario_do_Banco_de_Dados'
+conn_str = f'DRIVER=ODBC Driver 17 for SQL Server;SERVER={server};DATABASE={database};UID={username};PWD={password}'
+
+# Conectar ao banco de dados
+conn = pyodbc.connect(conn_str)
+cursor = conn.cursor()
+
+# Caminho para o arquivo Excel
+caminho_excel = 'C:\\Pasta_do_Arquivo\\arquivo.xlsx'
+
+# Ler a planilha do Excel
+df = pd.read_excel(caminho_excel)
+
+# Iterar sobre as linhas da planilha
+for index, row in df.iterrows():
+    sequencial = row['SEQUENCIAL']
+    link = row['LINK']
+    
+    # Atualizar o banco de dados
+    cursor.execute("UPDATE Anexo SET Caminho = ? WHERE Sequencial = ?", (link, sequencial))
+    conn.commit()
+
+# Fechar conexão com o banco de dados
+conn.close()
+
+print("Atualização concluída.")
